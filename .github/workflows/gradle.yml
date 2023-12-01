@@ -4,6 +4,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+
 jobs:
   build-without-cache:
     runs-on: ubuntu-latest
